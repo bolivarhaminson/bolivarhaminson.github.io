@@ -1,183 +1,64 @@
-/* Reseteo básico de márgenes y padding */
+/* styles.css */
+
+/* Reset de márgenes y relleno */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo del cuerpo */
 body {
-    font-family: 'Georgia', serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f2e3;
-    background-image: url('wood-texture.jpg');
-    background-size: cover;
-    color: #4a3c31;
-    margin: 0;
-    padding: 0;
 }
 
-/* Encabezado */
 header {
-    background-color: #7b5e57;
-    color: #f5e7dc;
-    padding: 15px 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    font-size: 2.5em;
-    letter-spacing: 2px;
+nav {
+    background: #444;
+    color: #fff;
 }
 
-/* Menú de navegación */
 nav ul {
     list-style: none;
-    padding: 10px;
-    text-align: center;
-    background: #947761;
-    border-top: 3px solid #7b5e57;
-    border-bottom: 3px solid #7b5e57;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #f5e7dc;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    background-color: #c69a7b;
-    color: #4a3c31;
-    transition: background-color 0.3s ease;
-}
-
-/* Sección principal */
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background: rgba(255, 248, 240, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border: 1px solid #947761;
-}
-
-/* Estilo de títulos y subtítulos */
-h2 {
-    color: #7b5e57;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #c69a7b;
-    padding-bottom: 5px;
-}
-
-p, ul, table {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-}
-
-/* Estilo de tablas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    background-color: #f5e7dc;
-    border: 2px solid #7b5e57;
-}
-
-table, th, td {
-    border: 1px solid #947761;
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #c69a7b;
     color: #fff;
+    text-decoration: none;
 }
 
-/* Estilo de formularios */
-form {
-    display: flex;
-    flex-direction: column;
-    background-color: #f5e7dc;
+main {
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid #947761;
 }
 
-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #4a3c31;
-}
-
-form input, form textarea, form button {
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #947761;
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-form input:focus, form textarea:focus {
-    outline: none;
-    border-color: #c69a7b;
-    background-color: #f9f4ef;
-}
-
-form button {
-    background-color: #7b5e57;
-    color: #f5e7dc;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-form button:hover {
-    background-color: #c69a7b;
-    color: #4a3c31;
-    transition: background-color 0.3s ease;
-}
-
-/* Estilo del pie de página */
-footer {
+.video-animaker {
     text-align: center;
-    padding: 15px 0;
-    background-color: #7b5e57;
-    color: #f5e7dc;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-top: 3px solid #4a3c31;
     margin-top: 20px;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
+video {
+    max-width: 100%;
+    height: auto;
+}
 
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
-
-    section {
-        margin: 10px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
